@@ -74,9 +74,12 @@ I decided to generate additional data because this will yield more robust learni
 To add more data to the the data set, I used the following techniques,
 like small translations, scaling and rotations, as described in  [published baseline model](http://yann.lecun.com/exdb/publis/pdf/sermanet-ijcnn-11.pdf).
 
-Here is an example of an original image and an augmented image:
+Here is an example of an original image
 
-![alt text][image1]
+![alt text][image1] 
+
+and 20 augmented images
+
 ![alt text][image3]
 
 The difference between the original data set and the augmented data set is the following.
@@ -90,7 +93,7 @@ My final model consisted of the following layers:
 
 | Layer         		|     Description	        					| 
 |:---------------------:|:---------------------------------------------:| 
-| Input         		| 32x32x1 Grayscale image   							| 
+| Input         		| 32x32x1 Grayscale image   					| 
 | Convolution 3x3     	| 1x1 stride, valid padding, outputs 30x30x32 	|
 | RELU					|												|
 | Max pooling	      	| 2x2 stride,  outputs 15x15x32 				|
@@ -103,8 +106,6 @@ My final model consisted of the following layers:
 | RELU					|												|
 | Fully connected		| 84x43, outputs 43     						|
 | Softmax				| etc.        									|
-|						|												|
- 
 
 
 #### 3. Describe how you trained your model. The discussion can include the type of optimizer, the batch size, number of epochs and any hyperparameters such as learning rate.
@@ -179,5 +180,3 @@ For the third image(Road work) and the fifth image(Double curve), which are inco
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
 #### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
-
-
